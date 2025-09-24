@@ -32,6 +32,22 @@ function adicionarAmigo() {
     listaNomes.appendChild(li);
 }
 
+//função para sortear os nomes
+function sortearAmigo() {
+    //alerta para verificar se a nomes
+    if (amigos.length < 2) {
+        alert("Adicione 2 ou mais nomes antes de sortear");
+        return;
+    }
 
+    //seleciona um nome aleatório
+    const indiceAletorio = Math.floor(Math.random() * amigos.length);
+    const nomeSorteado = amigos[indiceAletorio];
+
+    //mostra o resultado
+    const resultado = document.getElementById('resultado');
+    resultado.innerHTML = '';
+    resultado.innerHTML = `<li>O amigo sorteado é: <strong>${nomeSorteado}</strong></li>`
+}
 
 
