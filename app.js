@@ -24,8 +24,14 @@ function adicionarAmigo() {
     //adiciona o nome na lista
     amigos.push(nomes);
     acessoInput.value = '';
-
-
+ 
+    //cria lista
+    const listaNomes = document.getElementById('listaAmigos');
+    const li = document.createElement('li');
+    li.textContent = nomes;
+    listaNomes.appendChild(li);
 }
+
+
 
 
