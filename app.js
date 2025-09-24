@@ -49,5 +49,3 @@ function sortearAmigo() {
     resultado.innerHTML = '';
     resultado.innerHTML = `<li>O amigo sorteado é: <strong>${nomeSorteado}</strong></li>`;
 }
-
-
